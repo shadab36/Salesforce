@@ -1,28 +1,19 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
 <suite thread-count="-1" guice-stage="DEVELOPMENT" name="Failed suite [Suite]">
-  <test name="ChromeTest(failed)">
-    <parameter name="browser" value="chrome"/>
+  <test name="EdgeTest(failed)">
+    <parameter name="browser" value="edge"/>
     <classes>
       <class name="SalesForce.SalesforceAuto">
         <methods>
           <include name="send_emal"/>
-          <include name="setup"/>
-        </methods>
-      </class> <!-- SalesForce.SalesforceAuto -->
-    </classes>
-  </test> <!-- ChromeTest(failed) -->
-  <test name="FirefoxTest(failed)">
-    <parameter name="browser" value="firefox"/>
-    <classes>
-      <class name="SalesForce.SalesforceAuto">
-        <methods>
-          <include name="send_emal"/>
+          <include name="create_new"/>
           <include name="login"/>
+          <include name="test_clcik"/>
           <include name="setup"/>
           <include name="chek_new"/>
         </methods>
       </class> <!-- SalesForce.SalesforceAuto -->
     </classes>
-  </test> <!-- FirefoxTest(failed) -->
+  </test> <!-- EdgeTest(failed) -->
 </suite> <!-- Failed suite [Suite] -->

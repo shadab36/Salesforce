@@ -34,28 +34,30 @@ public class SourceCloudSales {
 
 		if (browser.equalsIgnoreCase("chrome")) {
 			// set path to Chromedrive.exe
-
+           // Desirecapalility caps=new DesireCabapality();
+			DesiredCapabilities capability = DesiredCapabilities.chrome();
 			ChromeOptions caps = new ChromeOptions();
 			Thread.sleep(1000);
 			caps.addArguments("--disable-notifications");
 			Thread.sleep(1000);
 	
-			caps.setCapability("platform", "Windows 10");
-			caps.setCapability("version", "64");
-		   driver = new RemoteWebDriver(new URL(URL), caps);
+			capability.setCapability("platform", "Windows 10");
+			capability.setCapability("version", "64");
+		   driver = new RemoteWebDriver(new URL(URL), capability);
 			driver.get("https://connect-inspiration-9547-dev-ed.cs90.my.salesforce.com/");
 			Thread.sleep(1000);
 
 		} else if (browser.equalsIgnoreCase("firefox")) {
 
 			//
+			DesiredCapabilities capability = DesiredCapabilities.firefox();
 			FirefoxOptions caps = new FirefoxOptions();
 
-			caps.setCapability("platform", "Windows 10");
+			capability.setCapability("platform", "Windows 10");
 
-			caps.setCapability("version", "57");
+			capability.setCapability("version", "57");
 
-			WebDriver driver = new RemoteWebDriver(new URL(URL), caps);
+			WebDriver driver = new RemoteWebDriver(new URL(URL), capability);
 
 			driver.get("https://connect-inspiration-9547-dev-ed.cs90.my.salesforce.com/");
 			Thread.sleep(2000);

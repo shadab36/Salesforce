@@ -6,7 +6,10 @@
       <class name="SalesForce.SalesforceAuto">
         <methods>
           <include name="send_emal"/>
+          <include name="close_browser"/>
+          <include name="create_new"/>
           <include name="login"/>
+          <include name="test_clcik"/>
           <include name="setup"/>
           <include name="chek_new"/>
         </methods>

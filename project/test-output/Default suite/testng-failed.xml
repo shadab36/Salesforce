@@ -1,15 +1,15 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
-<suite thread-count="-1" guice-stage="DEVELOPMENT" name="Failed suite [Default suite]">
-  <test name="Default test(failed)">
+<suite guice-stage="DEVELOPMENT" name="Failed suite [Default suite]">
+  <test thread-count="5" name="Default test(failed)">
     <classes>
       <class name="SalesForce.SalesforceAuto">
         <methods>
-          <include name="send_emal"/>
-          <include name="close_browser"/>
+          <include name="Conver_PoGnerator"/>
           <include name="create_new"/>
           <include name="login"/>
           <include name="test_clcik"/>
+          <include name="send_email"/>
           <include name="setup"/>
           <include name="chek_new"/>
         </methods>
